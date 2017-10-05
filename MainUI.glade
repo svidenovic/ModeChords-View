@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can_focus">False</property>
+    <property name="margin_top">1</property>
+    <property name="border_width">10</property>
+    <property name="title" translatable="yes">Mode Chords</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">500</property>
+    <property name="default_height">500</property>
+    <property name="gravity">center</property>
+    <child>
+      <object class="GtkBox" id="box1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox" id="box3">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xpad">5</property>
+                <property name="label" translatable="yes">Show Chords for (key mode): </property>
+                <property name="single_line_mode">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="KeyNmode_input">
+                <property name="name">KeyNmode_input</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="width_chars">20</property>
+                <property name="caps_lock_warning">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">5</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="GO_button">
+                <property name="label" translatable="yes">Go</property>
+                <property name="name">GO_button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">baseline</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">10</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Status_label">
+                <property name="name">Status_label</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xpad">10</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">10</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="box4">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_right">5</property>
+            <child>
+              <object class="GtkLabel" id="Active_chord_label">
+                <property name="name">Active_chord_label</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xpad">5</property>
+                <property name="label" translatable="yes">Chords:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButtonBox" id="buttonbox1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">baseline</property>
+                <property name="layout_style">start</property>
+                <child>
+                  <object class="GtkButton" id="Chord1_button">
+                    <property name="label" translatable="yes">1</property>
+                    <property name="name">Chord1_button</property>
+                    <property name="width_request">-1</property>
+                    <property name="height_request">-1</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="valign">baseline</property>
+                    <property name="resize_mode">immediate</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord2_button">
+                    <property name="label" translatable="yes">2</property>
+                    <property name="name">Chord2_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="resize_mode">immediate</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord3_button">
+                    <property name="label" translatable="yes">3</property>
+                    <property name="name">Chord3_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord4_button">
+                    <property name="label" translatable="yes">4</property>
+                    <property name="name">Chord4_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord5_button">
+                    <property name="label" translatable="yes">5</property>
+                    <property name="name">Chord5_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord6_button">
+                    <property name="label" translatable="yes">6</property>
+                    <property name="name">Chord6_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="Chord7_button">
+                    <property name="label" translatable="yes">7</property>
+                    <property name="name">Chord7_button</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">6</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="ModeChords_image">
+            <property name="name">ModeChords_image</property>
+            <property name="width_request">600</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">baseline</property>
+            <property name="margin_left">8</property>
+            <property name="margin_right">10</property>
+            <property name="margin_top">10</property>
+            <property name="margin_bottom">10</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
